@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;padding: 10px;
+    background-color: teal;
+    text-align: center;
+}
+.navbar .logo{
+    font-size: 32px;
+    text-transform: capitalize;
+    color: white;
+    
+}
+.navbar .nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+    padding-right: 40px;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.navbar .nav ul li{
+    padding: 10px;
+}
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+.product-container .card{
+    width: 300px;
+    background-color: lightblue;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    /* padding: 10px 0px; */
+}
+.card p,h5{
+    padding: 6px ;
+    text-align: center;
+}
+button{
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.shoping-cart{
+    display: flex;
+    background-color: rgb(247, 239, 239);
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+}
+.shoping-cart .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 2px 3px 0px #fff;
+}
+.shoping-cart .card-title{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.emptycard{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+.emptycard .cart{
+    background-color: rgb(5, 39, 52) !important;
+    color: white !important;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    margin: 20px;
+}
+@media screen and (max-width:699px) {
+    .product-container .card{
+        width:80%;
+        background-color: lightblue;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}

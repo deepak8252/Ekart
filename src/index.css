@@ -30,9 +30,10 @@
 }
 .product-container{
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: auto;
+    margin: auto !important;
 }
 .product-container .card{
     width: 300px;
@@ -101,11 +102,20 @@ button{
     .product-container .card{
         width:80%;
         background-color: lightblue;
-        margin: 10px auto;
+        margin: 10px auto !important;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 10px;
     }
+}
+.navlink{
+    color: white !important;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.sticky{
+    position: sticky;
+    top: 0;
 }

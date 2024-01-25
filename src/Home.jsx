@@ -23,7 +23,7 @@ const handle=()=>{
  setproduct(filterrer);
 }
   return (
-    <div>
+    <div className='container'>
        
        <button onClick={handle} style={{margin:10}}> less price product</button>
      <div className='product-container'>
